@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tw.com.changchinghsiang.sunday_classno_11_texttospeech.MainActivity"
+    android:padding="@dimen/xml_padding">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xml_textView_TextToSpeechSystem"
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom"/>
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xml_button_SpeechEnglish"
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom"
+        android:onClick="englishOnClick"/>
+
+    <Button
+        android:id="@+id/btnChinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xml_button_SpeechChinese"
+        android:layout_marginBottom="@dimen/xml_layout_marginBottom"
+        android:onClick="chineseOnClick"/>
+</LinearLayout>
